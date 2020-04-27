@@ -14,11 +14,11 @@ ___
 ### 项目启动流程：
 首先启动注册中心:`EurekaServer`启动后访问`localhost:8000`看到如下页面  
 
-![image1]()    
+![image1](https://github.com/devzwy/SpringCloudDemo/blob/master/images/1.png)    
 
 随后启动微服务`EurekaClient()`,至少启动一个端口,启动后可在以上页面发现注册成功的微服务    
 
-![image2]()    
+![image2](https://github.com/devzwy/SpringCloudDemo/blob/master/images/2.png)    
 
 最后启动外部调用端微服务`PublicApi`,访问:`localhost/getUser`,数据会通过不同的端口返回，
 如果其中有服务掉线后会通过熔断器返回预先定义好的数据，并根据熔断器配置的策略选择重连/remove机制，remove后该端口将不会被使用 
