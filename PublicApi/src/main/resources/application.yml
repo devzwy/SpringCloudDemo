@@ -1,3 +1,9 @@
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
 server:
   port: 80
 eureka:
@@ -15,7 +21,7 @@ eureka:
     #租期到期时间 10s
     lease-expiration-duration-in-seconds: 10
 #zuul:
-#  prefix: /demo  #设置统一域名前缀
+#  prefix: /zuul  #设置统一域名前缀
 #  routes:
 #    zuul-a:
 #      path: /user/**
