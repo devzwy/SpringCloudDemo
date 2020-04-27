@@ -1,8 +1,9 @@
-### SpringCloud使用到的相关组件以及端口等说明
->项目名EurekaServer：服务注册中心 端口使用8000
- 项目名EurekaClient：微服务客户端(内容提供者) 端口使用9000 
- 以上三个内容提供者在正常情况返回的内容都是一样的，只是放在不同的服务器，我这里为了测试所以写了三个client，分别返回不同的内容以测试负载均衡是否生效
- 项目名PublicApi：消费端+Hystrix（熔断器）+Zuul(路由网关以及全局拦截)  外网调用路径 端口80
+# SpringCloud使用到的相关组件以及端口等说明
+___
+
+ EurekaServer：服务注册中心 端口使用8000  
+ EurekaClient：微服务客户端(内容提供者) 端口分别使用9000、9001、9002、9003，在Idea Configuration中自行配置  
+ PublicApi：消费端+Hystrix（熔断器）+Zuul(路由网关以及全局拦截)  外网调用路径 端口80 
 #### 1. Eureka  
 服务治理,服务注册中心  
 #### 2.Hystrix
