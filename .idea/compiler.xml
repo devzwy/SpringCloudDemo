@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="eureka_client2" target="1.8" />
+      <module name="eureka_client2.main" target="1.8" />
+      <module name="eureka_client2.test" target="1.8" />
+      <module name="eureka_client3" target="1.8" />
+      <module name="eureka_client3.main" target="1.8" />
+      <module name="eureka_client3.test" target="1.8" />
+      <module name="eurekaserver" target="1.8" />
+      <module name="eurekaserver.main" target="1.8" />
+      <module name="eurekaserver.test" target="1.8" />
+      <module name="hystrix" target="1.8" />
+      <module name="hystrix.main" target="1.8" />
+      <module name="hystrix.test" target="1.8" />
+      <module name="zuul" target="1.8" />
+      <module name="zuul.main" target="1.8" />
+      <module name="zuul.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

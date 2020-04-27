@@ -1,0 +1,19 @@
+server:
+  port: 8000
+eureka:
+  instance:
+    #服务注册中心实例的主机名
+    hostname: testServer
+  server:
+    #开启自我保护 false时 不可用服务将被剔除
+    enable-self-preservation: true
+    #清理时间 20s 这里配置的为ms
+    eviction-interval-timer-in-ms: 20000
+  client:
+    #是否向服务注册中心注册自己 本身作为注册中心，不需要注册
+    register-with-eureka: false
+    #是否检索服务
+    fetch-registry: false
+    serviceUrl:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

@@ -1,0 +1,13 @@
+
+spring:
+  application:
+    name: UserController
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+  instance:
+    #租期更新时间 单位 s
+    lease-renewal-interval-in-seconds: 5
+    #租期到期时间 10s
+    lease-expiration-duration-in-seconds: 10

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/.idea/modules" />
+    <file type="web" url="file://$PROJECT_DIR$/Config" />
+    <file type="web" url="file://$PROJECT_DIR$/EurekaClient" />
+    <file type="web" url="file://$PROJECT_DIR$/EurekaClient2" />
+    <file type="web" url="file://$PROJECT_DIR$/EurekaClient3" />
+    <file type="web" url="file://$PROJECT_DIR$/EurekaServer" />
+    <file type="web" url="file://$PROJECT_DIR$/Hystrix" />
+    <file type="web" url="file://$PROJECT_DIR$/PublicApi" />
+    <file type="web" url="file://$PROJECT_DIR$/Zuul" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

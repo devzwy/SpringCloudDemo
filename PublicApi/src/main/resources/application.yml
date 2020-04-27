@@ -1,0 +1,31 @@
+server:
+  port: 80
+eureka:
+  client:
+    #是否向服务注册中心注册自己 外网调用无需注册到注册中心
+    register-with-eureka: false
+    #是否检索服务 需要索引全部的微服务
+    fetch-registry: true
+    serviceUrl:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://localhost:8000/eureka/
+  instance:
+    #租期更新时间 单位 s
+    lease-renewal-interval-in-seconds: 5
+    #租期到期时间 10s
+    lease-expiration-duration-in-seconds: 10
+#zuul:
+#  prefix: /demo  #设置统一域名前缀
+#  routes:
+#    zuul-a:
+#      path: /user/**
+#      #serviceId 为需要访问的Eureka指定的名字客户端
+#      serviceId: UserController
+#    zuul-b:
+#      path: /baidu/**
+#      #serviceId 为需要访问的Eureka指定的名字客户端
+#      url: https://www.baidu.com
+
+#  host:
+#    socket-timeout-millis: 60000
+#    connect-timeout-millis: 60000
